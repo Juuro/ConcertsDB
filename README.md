@@ -3,7 +3,7 @@ ConcertsDB
 
 A database of my visited concerts and festivals.
 
-Missing features:
+Features to come:
 - input form
 - search
 - information about the event
