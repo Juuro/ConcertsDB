@@ -1,5 +1,7 @@
 <?php 
 
+date_default_timezone_set('Europe/Berlin');
+
 function mysql_timestamp2german($t) { 
     return sprintf("%02d.%02d.%04d", 
                 substr($t, 8, 2), 
@@ -27,7 +29,6 @@ if (!$result) {
 
 while ($row = $result->fetch_assoc()) {
 
-	echo get_unixtime($row['date'])." >= ".time();
     if(get_unixtime($row['date']) >= time()){
         echo "<em>";
     }
